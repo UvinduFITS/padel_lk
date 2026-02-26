@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Padel.lk - Sri Lanka's Home of Padel</title>
+  <meta name="description" content="Padel.lk is Sri Lanka's home of padel. Find and book padel courts, coaches, tournaments and gear in one place. Coming soon to Colombo and beyond." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="padel_lk_style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="#home">Padel<span>.lk</span></a>
+      </div>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#courts">Book a Court</a></li>
+          <li><a href="#coaches">Coaches</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#leagues">Leagues</a></li>
+          <li><a href="#membership">Membership</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+          Partner With Us
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          Menu
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">Padel.lk is launching soon</p>
+          <h1>Sri Lanka's Home of Padel.</h1>
+          <p>
+            Soon you'll be able to <strong>find and book padel courts</strong>,
+            coaches, tournaments and gear across Sri Lanka - all in one place.
+          </p>
+          <div class="hero-actions">
+            <a href="#courts" class="btn primary soon">Coming Soon - Book a Court</a>
+            <a href="#contact" class="btn ghost">List Your Venue</a>
+          </div>
+          <p class="hero-subnote">
+            Be the first to know when we launch. Leave your details below.
+          </p>
+          <div class="hero-tiles">
+            <img src="images/padel%20court%20at%20night%20lights.jpg" alt="Padel court under lights" loading="lazy" />
+            <img src="images/adel%20players%20rally%20match.jpg" alt="Players competing in a padel match" loading="lazy" />
+            <img src="images/padel%20racket%20and%20balls%20close%20up.jpg" alt="Padel racket and balls close-up" loading="lazy" />
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-tag">Pre-launch - Padel.lk</div>
+          <h2>Early Access List</h2>
+          <form class="hero-form" id="waitlistForm">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              I am a:
+              <select name="role">
+                <option value="player">Player</option>
+                <option value="venue">Venue / Club</option>
+                <option value="coach">Coach</option>
+                <option value="brand">Brand / Sponsor</option>
+              </select>
+            </label>
+            <button type="submit" class="btn primary full-width soon">
+              Join Waitlist (Coming Soon)
+            </button>
+            <p class="form-note">
+              Form is a placeholder - connect this to your email / CRM later.
+            </p>
+            <p class="form-note form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="courts" class="section">
+      <div class="container section-header reveal">
+        <h2>Book a Padel Court</h2>
+        <p>Search by city, see live availability, and book in seconds - launching soon.</p>
+      </div>
+      <div class="container section-media reveal">
+        <img src="images/padel%20court%20aerial%20view.jpg" alt="Night padel court with lighting" loading="lazy" />
+        <img src="images/modern%20padel%20club%20facilities.jpg" alt="Modern padel club facilities" loading="lazy" />
+      </div>
+      <div class="container grid-3 reveal">
+        <div class="card">
+          <h3>Search by Location</h3>
+          <p>Find courts in Colombo, Kandy, Galle, Negombo and more as we onboard venues.</p>
+        </div>
+        <div class="card">
+          <h3>Real-Time Availability</h3>
+          <p>See which courts are free, choose your time slot, and lock in your game.</p>
+        </div>
+        <div class="card">
+          <h3>Secure Payments</h3>
+          <p>Pay online with card or local gateways, and get instant confirmation.</p>
+        </div>
+      </div>
+      <div class="container center reveal">
+        <a href="#contact" class="btn primary">I Own a Court - Onboard Me</a>
+      </div>
+    </section>
+
+    <section id="coaches" class="section section-alt">
+      <div class="container section-header reveal">
+        <h2>Find a Padel Coach</h2>
+        <p>Beginner-friendly sessions, performance coaching, and group clinics.</p>
+      </div>
+      <div class="container section-media reveal">
+        <img src="images/padel%20coaching%20session.jpg" alt="Coach guiding a padel lesson" loading="lazy" />
+        <img src="images/racket%20sports%20training%20drill.jpg" alt="Training session with racquet sports" loading="lazy" />
+      </div>
+      <div class="container grid-3 reveal">
+        <div class="card">
+          <h3>Beginner Sessions</h3>
+          <p>Learn the basics - rules, strokes, movement, and how to enjoy your first game.</p>
+        </div>
+        <div class="card">
+          <h3>Performance Coaching</h3>
+          <p>Level up your game with drills, tactics, and match-play analysis.</p>
+        </div>
+        <div class="card">
+          <h3>Group & Corporate</h3>
+          <p>Workshops and team-building sessions for companies and groups.</p>
+        </div>
+      </div>
+      <div class="container center reveal">
+        <a href="#contact" class="btn ghost">Coaches - Apply to Join Padel.lk</a>
+      </div>
+    </section>
+
+    <section id="shop" class="section">
+      <div class="container section-header reveal">
+        <h2>Padel Gear & Apparel</h2>
+        <p>Rackets, balls, shoes and accessories - curated for Sri Lankan players.</p>
+      </div>
+      <div class="container section-media reveal">
+        <img src="images/padel%20rackets%20collection.jpg" alt="Padel rackets and gear on a bench" loading="lazy" />
+        <img src="images/sportswear%20tennis%20shoes%20accessories.jpg" alt="Sportswear and accessories ready for play" loading="lazy" />
+      </div>
+      <div class="container grid-3 reveal">
+        <div class="card product-card">
+          <div class="product-tag">Coming Soon</div>
+          <h3>Rackets</h3>
+          <p>From beginner-friendly control rackets to powerful performance frames.</p>
+        </div>
+        <div class="card product-card">
+          <div class="product-tag">Coming Soon</div>
+          <h3>Balls & Accessories</h3>
+          <p>High-quality balls, grips, overgrips and bags to keep you match-ready.</p>
+        </div>
+        <div class="card product-card">
+          <div class="product-tag">Coming Soon</div>
+          <h3>Apparel</h3>
+          <p>Lightweight, breathable outfits designed for hot Sri Lankan conditions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="leagues" class="section section-alt">
+      <div class="container section-header reveal">
+        <h2>Leagues, Tournaments & Events</h2>
+        <p>Compete, connect and climb the rankings with Padel.lk.</p>
+      </div>
+      <div class="container section-media reveal">
+        <img src="images/padel%20tournament%20match.jpg" alt="Tournament match on a racquet court" loading="lazy" />
+        <img src="images/sports%20crowd%20cheering.jpg" alt="Fans watching a live sports match" loading="lazy" />
+      </div>
+      <div class="container grid-3 reveal">
+        <div class="card">
+          <h3>Weekend Leagues</h3>
+          <p>Regular formats for beginner, intermediate and open players.</p>
+        </div>
+        <div class="card">
+          <h3>Corporate Events</h3>
+          <p>Padel as a unique, high-energy option for team-building and wellness.</p>
+        </div>
+        <div class="card">
+          <h3>Rankings & Stats</h3>
+          <p>Track your performance and see where you stand in Sri Lanka's padel scene.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="membership" class="section">
+      <div class="container section-header reveal">
+        <h2>Padel.lk Club Membership</h2>
+        <p>Exclusive perks for players who are serious about their game - and fun.</p>
+      </div>
+      <div class="container membership-grid reveal">
+        <div class="card membership-card membership-card--player">
+          <h3>Player Membership</h3>
+          <p>Perfect for individual players.</p>
+          <ul class="feature-list">
+            <li>Discounts on court bookings</li>
+            <li>Offers on gear and apparel</li>
+            <li>Priority access to events</li>
+            <li>Members-only community</li>
+          </ul>
+          <p class="price">Planned: LKR 1,990 / month</p>
+        </div>
+        <div class="card membership-card membership-card--partner">
+          <h3>Venue & Partner Plans</h3>
+          <p>Designed for courts, gyms, hotels and brands.</p>
+          <ul class="feature-list">
+            <li>Featured placement on Padel.lk</li>
+            <li>Booking system integration</li>
+            <li>Marketing & content support</li>
+            <li>Insights & performance reports</li>
+          </ul>
+          <a href="#contact" class="btn ghost full-width">Talk to Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container section-header reveal">
+        <h2>Let's Build the Padel Scene in Sri Lanka</h2>
+        <p>Players, venues, coaches and brands - we'd love to hear from you.</p>
+      </div>
+      <div class="container contact-grid reveal">
+        <div>
+          <h3>Tell Us Who You Are</h3>
+          <p>
+            Use the form for now and connect it later to your email, CRM, or WhatsApp.
+            This page can also be embedded with a real form tool (Typeform, Tally, etc.).
+          </p>
+          <ul class="feature-list">
+            <li>Venue / club onboarding</li>
+            <li>Coach applications</li>
+            <li>Sponsorship & partnerships</li>
+            <li>Media & collaboration requests</li>
+          </ul>
+        </div>
+        <div>
+          <form class="contact-form" id="contactForm">
+            <label>
+              Name
+              <input type="text" name="contact_name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="contact_email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              I'm reaching out as a:
+              <select name="contact_type">
+                <option value="player">Player</option>
+                <option value="venue">Venue / Club</option>
+                <option value="coach">Coach</option>
+                <option value="brand">Brand / Sponsor</option>
+                <option value="media">Media / Other</option>
+              </select>
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Tell us how you'd like to work with Padel.lk"></textarea>
+            </label>
+            <button type="submit" class="btn primary full-width">
+              Send Message
+            </button>
+            <p class="form-note">
+              To make this live, point the form to an email handler or service like Formspree.
+            </p>
+            <p class="form-note form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Padel.lk - Sri Lanka's Home of Padel.</p>
+      <p class="footer-sub">Built with care for players, venues, coaches and brands.</p>
+    </div>
+  </footer>
+
+  <script src="padel_lk_script.js"></script>
+</body>
+</html>
